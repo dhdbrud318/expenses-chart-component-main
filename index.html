@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="balance container flex-row-sb">
+      <div class="balance__text-col">
+        <p class="balance__my-balance p--sm p--white">My balance</p>
+        <h2 class="balance__balance-num p--white">$921.48</h2>
+      </div>
+      <div class="balance__logo-col">
+        <img src="images/logo.svg" alt="Logo" />
+      </div>
+    </section>
+
+    <section class="chart container">
+      <h2 class="chart__spending p--dark">Spending - Last 7 days</h2>
+      <div class="chart__bars flex-row-sb">
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-mon">$54.26</p>
+          <div class="chart__bar" id="mon"></div>
+          <div class="chart__date p--sm">mon</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-tue">2</p>
+          <div class="chart__bar" id="tue"></div>
+          <div class="chart__date p--sm">tue</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-wed">3</p>
+          <div class="chart__bar" id="wed"></div>
+          <div class="chart__date p--sm">wed</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-thu">$54.26</p>
+          <div class="chart__bar" id="thu"></div>
+          <div class="chart__date p--sm">thu</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-fri">5</p>
+          <div class="chart__bar" id="fri"></div>
+          <div class="chart__date p--sm">fri</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-sat">6</p>
+          <div class="chart__bar" id="sat"></div>
+          <div class="chart__date p--sm">sat</div>
+        </div>
+        <div class="chart__bar-col">
+          <p class="chart__current-val p--white" id="current-val-sun">7</p>
+          <div class="chart__bar" id="sun"></div>
+          <div class="chart__date p--sm">sun</div>
+        </div>
+      </div>
+      <hr class="chart__line" />
+      <div class="chart__summary flex-row-sb">
+        <div class="chart__this-month">
+          <p class="p--sm chart__total-tm">Total this month</p>
+          <p class="chart__total-price p--dark">$478.33</p>
+        </div>
+        <div class="chart__last-month">
+          <p class="chart__last-month-stat p--sm p--dark">+2.4%</p>
+          <p class="chart__from-last-month p--sm">from last month</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+   Coded by Yoo Keoung Oh</a>.
+    </div>
+
+    <script src="script.js"></script>
+    <script src="data.json"></script>
+  </body>
+</html>
