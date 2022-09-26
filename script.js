@@ -1,6 +1,6 @@
 const bars = document.querySelectorAll(".chart__bar");
 const expenditures = document.querySelectorAll(".chart__current-val");
-const dataAddress = "/data.json";
+const dataAddress = "./data.json";
 let min, max;
 
 const highest_comsumption = { day: "", amount: 0 };
